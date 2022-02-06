@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tra cuu gia hoa qua</title>
+</head>
+<body>
+<h2>Giá hoa quả</h2>
+<label>Nhập tên loại hoa quả: </label><input type="text" id="hoaqua">
+<button onclick="submit();">Xem giá</button>
+<script type="text/javascript">
+    function submit() {
+        let tenhoaqua = document.getElementById('hoaqua').value;
+        switch (tenhoaqua.toLowerCase()) {
+            case "dưa hấu":
+            case "ổi":
+                document.write("20000 VND");
+                break;
+            case "táo":
+            case "xoài":
+                document.write("30000 VND");
+                break;
+            case "cam":
+            case "chôm chôm":
+                document.write("40000 VND");
+                break;
+            case "măng cụt":
+                document.writeln("50000 VND");
+                default:
+                    document.write('Không có loại hoa quả này')
+
+        }
+
+
+    }
+</script>
+</body>
+</html>
